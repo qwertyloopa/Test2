@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task1.Classes
 {
-    internal class Employee
+    internal class Employee : IComparable<Employee>
     {
         public string? name;
         public int age;
@@ -23,5 +23,12 @@ namespace Task1.Classes
             string result = $"Name: {name}, Age: {age}, Salary:{salary}";
             Console.WriteLine(result);
         }
+
+        public int CompareTo(Employee? other)
+        {
+            if (other == null) return 1 ;
+            return salary.CompareTo(other.salary) ;
+        }
+        
     }
 }
