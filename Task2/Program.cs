@@ -17,8 +17,6 @@ namespace Task2
 
             List<int> list = new List<int>(nums);
 
-            List<int> list2 = new List<int>();
-
             var input = from i in list
                         where i %2 == 0
                         select i;
