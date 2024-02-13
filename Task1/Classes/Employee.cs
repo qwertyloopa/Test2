@@ -18,7 +18,7 @@ namespace Task1.Classes
             this.salary = salary;
         }
 
-        public void ShowInfo()
+        public virtual void ShowInfo()
         {
             string result = $"Name: {name}, Age: {age}, Salary:{salary}";
             Console.WriteLine(result);

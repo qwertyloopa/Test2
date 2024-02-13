@@ -8,6 +8,9 @@ namespace Task1
         {
             Employee john = new Employee("John", 28, 1200);
             john.ShowInfo();
+
+            Manager lily = new Manager("Lily", 25, 3000, "Marketing");
+            lily.ShowInfo();
         }
     }
 }
